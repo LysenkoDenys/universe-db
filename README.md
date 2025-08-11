@@ -40,15 +40,13 @@ git clone https://github.com/<your-username>/universe-db.git
 cd universe-db
 ```
 
-## Import the database:
+2. Import the database:
 
 ```bash
-<code>
 psql -U <your-username> -d universe -f universe.sql
-</code>
 ```
 
-## Usage
+## ⚙ Usage
 
 Once imported, you can explore the data:
 
@@ -63,11 +61,11 @@ JOIN star s ON p.star_id = s.star_id
 WHERE s.name = 'Sun';
 ```
 
-## Files
+## 🗂️ Files
 
 universe.sql – Contains schema and data for the database.
 README.md – Project description.
 
-## License
+## 🧻 License
 
 This project is released under the MIT License.
