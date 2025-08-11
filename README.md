@@ -38,19 +38,19 @@ The database contains **five main tables** and **one join table**:
 
 ## Import the database:
 
+bash
 <code>
-  bash
-  psql -U <your-username> -d universe -f universe.sql
+psql -U <your-username> -d universe -f universe.sql
 </code>
 
 ## Usage
 
 Once imported, you can explore the data:
 
+sql
 <code>
-  sql
 -- List all galaxies
-SELECT * FROM galaxy;
+SELECT \* FROM galaxy;
 
 -- Find all planets for a given star
 SELECT p.name
