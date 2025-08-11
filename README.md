@@ -1,12 +1,15 @@
-# Universe Database Project
+# 🌌 Universe Database Project
 
-## Overview
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)](https://www.postgresql.org/)
 
-This project is a PostgreSQL database that models a fictional universe.  
+## 🚀 Overview
+
+This project is a **PostgreSQL database** modeling a fictional universe.  
 It includes galaxies, stars, planets, moons, spaceships, and their relationships.  
-The project was built to practice database design, normalization, and SQL queries.
+Built as a practice exercise in database design, normalization, and SQL queries.
 
-## Database Structure
+## 🗂️ Database Structure
 
 The database contains **five main tables** and **one join table**:
 
@@ -17,28 +20,29 @@ The database contains **five main tables** and **one join table**:
 5. **spaceship** – Stores spaceships with various capacities.
 6. **spaceship_planet** – Many-to-many relationship between spaceships and planets.
 
-### Relationships
+### 🔗 Relationships
 
 - **Galaxy → Star**: One-to-many
 - **Star → Planet**: One-to-many
 - **Planet → Moon**: One-to-many
 - **Spaceship ↔ Planet**: Many-to-many (via `spaceship_planet`)
 
-### Visualization
+### 🖼️ Visualization
 
-<img width="1531" height="902" alt="Image" src="https://github.com/user-attachments/assets/0134b437-871b-4886-b8d4-98bd40db299a" />
+![Universe ERD](https://github.com/user-attachments/assets/0134b437-871b-4886-b8d4-98bd40db299a)
 
-## Installation
+## ⚙️ Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/universe-db.git
-   cd universe-db
-   ```
+
+````bash
+git clone https://github.com/<your-username>/universe-db.git
+cd universe-db
 
 ## Import the database:
 
-bash
+
+```bash
 <code>
 psql -U <your-username> -d universe -f universe.sql
 </code>
@@ -47,8 +51,7 @@ psql -U <your-username> -d universe -f universe.sql
 
 Once imported, you can explore the data:
 
-sql
-<code>
+```sql
 -- List all galaxies
 SELECT \* FROM galaxy;
 
@@ -67,3 +70,4 @@ README.md – Project description.
 ## License
 
 This project is released under the MIT License.
+````
