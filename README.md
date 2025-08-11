@@ -35,17 +35,18 @@ The database contains **five main tables** and **one join table**:
 
 1. Clone the repository:
 
-````bash
+```bash
 git clone https://github.com/<your-username>/universe-db.git
 cd universe-db
+```
 
 ## Import the database:
-
 
 ```bash
 <code>
 psql -U <your-username> -d universe -f universe.sql
 </code>
+```
 
 ## Usage
 
@@ -60,7 +61,7 @@ SELECT p.name
 FROM planet p
 JOIN star s ON p.star_id = s.star_id
 WHERE s.name = 'Sun';
-</code>
+```
 
 ## Files
 
@@ -70,4 +71,3 @@ README.md – Project description.
 ## License
 
 This project is released under the MIT License.
-````
