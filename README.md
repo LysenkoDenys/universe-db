@@ -28,14 +28,6 @@ The database contains **five main tables** and **one join table**:
 
 <img width="1531" height="902" alt="Image" src="https://github.com/user-attachments/assets/0134b437-871b-4886-b8d4-98bd40db299a" />
 
-## Requirements Met
-
-- At least **5 tables** created.
-- **Galaxy** and **Star** have at least 6 rows.
-- **Planet** has at least 12 rows.
-- **Moon** has at least 20 rows.
-- Many-to-many relationship implemented between `spaceship` and `planet`.
-
 ## Installation
 
 1. Clone the repository:
@@ -47,7 +39,7 @@ The database contains **five main tables** and **one join table**:
 ## Import the database:
 
 <code>
-bash
+  bash
   psql -U <your-username> -d universe -f universe.sql
 </code>
 
@@ -56,7 +48,7 @@ bash
 Once imported, you can explore the data:
 
 <code>
-sql
+  sql
 -- List all galaxies
 SELECT * FROM galaxy;
 
