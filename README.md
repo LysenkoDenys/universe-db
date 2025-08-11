@@ -46,7 +46,7 @@ cd universe-db
 psql -U <your-username> -d universe -f universe.sql
 ```
 
-## ⚙ Usage
+## 🛒 Usage
 
 Once imported, you can explore the data:
 
